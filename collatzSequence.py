@@ -14,10 +14,10 @@ logging.disable(logging.CRITICAL)  # Note out to enable logging.
 
 def collatz(number):
     """Perform collatz sequence calculations
-    and print output until sequence ends at 1."""
+    and print output until sequence completes."""
 
-    while number != 1 and number > 0:
-        if number % 2 == 1:
+    while number != 1:
+        if number % 2:
             print(int(3 * number + 1))
             number = int(3 * number + 1)
         else:
@@ -29,13 +29,13 @@ def main():
     """Call collatz function with try/except block to detect value errors."""
 
     try:
-        number = int(input("Please enter a positive integer value: "))
+        number = int(input("Please enter an integer greater than 1: "))
         if number > 1:
             collatz(number)
         else:
             raise ValueError
     except ValueError:
-        print("You must enter a positive integer value for the program to work.")
+        print("You must enter an integer value greater than 1 for the program to work.")
 
 
 if __name__ == "__main__":
