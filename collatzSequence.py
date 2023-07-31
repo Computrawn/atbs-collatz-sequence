@@ -13,8 +13,7 @@ logging.disable(logging.CRITICAL)  # Note out to enable logging.
 
 
 def collatz(number: int) -> int:
-    """Perform collatz sequence calculations
-    and print output until sequence finishes."""
+    """Perform collatz sequence calculations and print output."""
 
     if number % 2:
         number = int(3 * number + 1)
@@ -25,7 +24,7 @@ def collatz(number: int) -> int:
 
 
 def main() -> None:
-    """Call collatz function with try/except block to detect value errors."""
+    """Call collatz function to completion using try/except block to detect value errors."""
 
     try:
         number = int(input("Please enter an integer greater than 1:\n"))
