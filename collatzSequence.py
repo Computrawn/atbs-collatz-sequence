@@ -27,9 +27,9 @@ def main() -> None:
     """Call collatz function to completion using try/except block to detect value errors."""
 
     try:
-        number = int(input("Please enter an integer greater than 1:\n"))
-        while number > 1:
-            number = collatz(number)
+        user_input = int(input("Please enter an integer greater than 1:\n"))
+        while user_input > 1:
+            user_input = collatz(user_input)
         else:
             raise ValueError
     except ValueError:
