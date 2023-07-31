@@ -13,7 +13,7 @@ logging.disable(logging.CRITICAL)  # Note out to enable logging.
 
 
 def collatz(number: int) -> int:
-    """Perform collatz sequence calculations and print output."""
+    """Perform collatz sequence calculations, then print and return output."""
 
     if number % 2:
         number = int(3 * number + 1)
@@ -33,7 +33,7 @@ def main() -> None:
         else:
             raise ValueError
     except ValueError:
-        print("You must enter an integer value greater than 1 for the program to work.")
+        print("Invalid input: Try a positive integer greater than 1 next time.")
 
 
 if __name__ == "__main__":
