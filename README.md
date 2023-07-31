@@ -27,8 +27,3 @@ Automate the Boring Stuff with Python: Practical Programming for Total Beginners
 Al Sweigart
 https://itunes.apple.com/WebObjects/MZStore.woa/wa/viewBook?id=0
 This material may be protected by copyright.
-Excerpt From Automate the Boring Stuff with Python: 
-Practical Programming for Total Beginners, 2nd Edition
-Al Sweigart
-https://itunes.apple.com/WebObjects/MZStore.woa/wa/viewBook?id=0
-This material may be protected by copyright.
