@@ -30,8 +30,9 @@ def main() -> None:
         user_input = int(input("Please enter an integer greater than 1:\n"))
         while user_input > 1:
             user_input = collatz(user_input)
-        else:
+        if user_input < 1:
             raise ValueError
+
     except ValueError:
         print("Invalid input: Try a positive integer greater than 1 next time.")
 
