@@ -34,12 +34,12 @@ def main() -> None:
                 raise ValueError
 
         except ValueError:
-            print("Invalid input: Try a positive integer greater than 1 next time.")
+            print("Invalid input.")
 
         else:
             while user_input > 1:
                 user_input = collatz(user_input)
-            return False
+            return 0
 
 
 if __name__ == "__main__":
