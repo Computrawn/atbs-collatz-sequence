@@ -39,7 +39,7 @@ def main() -> None:
         else:
             while user_input > 1:
                 user_input = collatz(user_input)
-            return 0
+            exit()
 
 
 if __name__ == "__main__":
