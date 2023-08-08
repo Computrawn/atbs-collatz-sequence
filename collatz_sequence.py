@@ -12,17 +12,6 @@ logging.basicConfig(
 logging.disable(logging.CRITICAL)  # Note out to enable logging.
 
 
-def collatz(number: int) -> int:
-    """Perform collatz sequence calculations, then print and return output."""
-
-    if number % 2:
-        number = int(3 * number + 1)
-    else:
-        number = int(number // 2)
-    print(number)
-    return number
-
-
 def main() -> None:
     """Call collatz function to completion using try/except block to detect value errors."""
 
@@ -40,6 +29,17 @@ def main() -> None:
             while user_input > 1:
                 user_input = collatz(user_input)
             exit()
+
+
+def collatz(number: int) -> int:
+    """Perform collatz sequence calculations, then print and return output."""
+
+    if number % 2:
+        number = 3 * number + 1
+    else:
+        number = number // 2
+    print(number)
+    return number
 
 
 if __name__ == "__main__":
